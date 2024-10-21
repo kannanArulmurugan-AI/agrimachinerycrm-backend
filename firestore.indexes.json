@@ -1,0 +1,38 @@
+{
+  "indexes": [],
+  "fieldOverrides": []
+}
+{
+  "indexes": [
+    // Index for products collection on "name" field (ascending order)
+    {
+      "collectionId": "products", // Use collectionId instead of collectionGroup for single collection
+      "fields": [
+        {
+          "fieldPath": "name",
+          "mode": "ASCENDING"
+        }
+      ]
+    },
+    // Index for products collection on "price" field (ascending order)
+    {
+      "collectionId": "products",
+      "fields": [
+        {
+          "fieldPath": "price",
+          "mode": "ASCENDING"
+        }
+      ]
+    },
+    // Index for customers collection on "email" field (ascending order)
+    {
+      "collectionId": "customers", // Use collectionId for single collection
+      "fields": [
+        {
+          "fieldPath": "email",
+          "mode": "ASCENDING"
+        }
+      ]
+    }
+  ]
+}
